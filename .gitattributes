@@ -1,0 +1,50 @@
+# Automatic line end normalization
+* text=auto
+
+# Python files always LF
+*.py text eol=lf
+
+# Images as binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.gif binary
+*.ico binary
+
+# .zip texture packs
+*.zip binary
+
+# .exe files and other binaries
+*.exe binary
+*.dll binary
+*.so binary
+*.bin binary
+
+# Text files treated as LF text
+*.txt text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+
+# Shader files, scripts etc.
+*.glsl text eol=lf
+*.frag text eol=lf
+*.vert text eol=lf
+*.shader text eol=lf
+
+# Bash/scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# For github linguist
+*.py linguist-language=Python
+*.glsl linguist-language=GLSL
+
+# Ignore diffs for IDE's config files
+*.code-workspace text eol=lf
+*.vscode/* text eol=lf

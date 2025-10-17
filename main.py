@@ -1,10 +1,10 @@
 from builtins import *
 import pygame as pg
-
+import config as cfg
 
 class Game:
     def __init__(self):
-        self.screen: pg.Surface = pg.display.set_mode((800, 600), pg.DOUBLEBUF)
+        self.screen: pg.Surface = pg.display.set_mode(cfg.SIZE, pg.DOUBLEBUF)
         self.clock: pg.Clock = pg.time.Clock()
         # Changing variables
         self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
