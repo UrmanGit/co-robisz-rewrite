@@ -1,11 +1,12 @@
 import pygame as pg
 
-from .config import window_size
+from .window import WindowManager as wm
+import config as cfg
 from ..commons import *
 
 class Game:
     def __init__(self) -> None:
-        self.screen = pg.display.set_mode(window_size, pg.DOUBLEBUF | pg.RESIZABLE)
+        self.screen = wm(cfg.window_size, False, pg.DOUBLEBUF)
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple = pg.mouse.get_pressed()

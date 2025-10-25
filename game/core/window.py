@@ -3,25 +3,29 @@ from ..commons import *
 import pygame as pg
 
 class WindowManager:
-    def __init__(self, size: tuple[int, int], fullscreen: bool, flags: int, screen_resolution: tuple[int, int] = cfg.SCREEN_RESOLUTION):
+    def __init__(self, size: tuple[int, int], _fullscreen: bool, flags: int, screen_resolution: tuple[int, int] = cfg.SCREEN_RESOLUTION) -> None:
+        """
+        Creates a game window.
+
+        :param size: Game window size
+        :param _fullscreen: Defines if game window is _fullscreen
+        :param flags: Flags used to make a pygame.Surface object
+        :param screen_resolution: Screen resolution used when _fullscreen = True
+        """
         self.size: tuple[int, int] = size
-        self.fullscreen: bool = fullscreen
+        self._fullscreen: bool = _fullscreen
         self.flags: int = flags
         self.screen_resolution: tuple[int, int] = screen_resolution
-        self.screen: Surface = Surface(self.size if not self.fullscreen else self.screen_resolution,
-                                       self.flags | (pg.FULLSCREEN if self.fullscreen else 0))
+        self.screen: Surface = Surface(self.size if not self._fullscreen else self.screen_resolution,
+                                       self.flags | (pg.FULLSCREEN if self._fullscreen else 0))
 
     def update_screen(self) -> None:
-        self.screen: Surface = Surface(self.size if not self.fullscreen else self.screen_resolution,
-                                       self.flags | (pg.FULLSCREEN if self.fullscreen else 0))
+        self.screen: Surface = Surface(self.size if not self._fullscreen else self.screen_resolution,
+                                       self.flags | (pg.FULLSCREEN if self._fullscreen else 0))
 
-    def toggle_fullscreen(self):
-        self.fullscreen = not self.fullscreen
-        self.update_screen()
-
-    def update(self, size: tuple[int, int] = None, screen_resolution: tuple[int, int] = cfg.SCREEN_RESOLUTION, fullscreen: bool = None, flags: int = None) -> None:
-        self.size = size if size is not None else self.size
-        self.screen_resolution = screen_resolution if screen_resolution is not None else self.screen_resolution
-        self.fullscreen = fullscreen if fullscreen is not None else self.fullscreen
-        self.flags = flags if flags is not None else self.flags
+    def toggle__fullscreen(self) -> None:
+        """
+        Toggles _fullscreen mode.
+        """
+        self._fullscreen = not self._fullscreen
         self.update_screen()
