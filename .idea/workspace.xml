@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat: add player images and animations, config.py">
-      <change afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/commons/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/core/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="refactor: convert &quot;game&quot; to package, split to subpackages">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760730440341</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor: convert &quot;game&quot; to package, split to subpackages">
+      <option name="closed" value="true" />
+      <created>1761341974464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761341974464</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add player images and animations, config.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add player images and animations, config.py" />
+    <MESSAGE value="refactor: convert &quot;game&quot; to package, split to subpackages" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: convert &quot;game&quot; to package, split to subpackages" />
   </component>
 </project>
