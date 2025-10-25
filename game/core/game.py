@@ -1,15 +1,45 @@
 import pygame as pg
+pg.init()
+
+import sys
 
 from .window import WindowManager as wm
-import config as cfg
+from . import config as cfg
 from ..commons import *
 
 class Game:
     def __init__(self) -> None:
-        self.screen = wm(cfg.window_size, False, pg.DOUBLEBUF)
+        self.wm = wm(cfg.window_size, False, pg.DOUBLEBUF)
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple = pg.mouse.get_pressed()
         self.just_mouse: tuple = pg.mouse.get_just_pressed()
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
         self.clock: pg.Clock = pg.time.Clock()
+
+    def events(self) -> None:
+        for e in pg.event.get():
+            if e.type == pg.QUIT:
+                sys.exit()
+            if e.type == pg.K_DOWN:
+                if e.key == pg.K_F11:
+                    self.wm.toggle_fullscreen()
+
+    def update(self) -> None:
+        self.clock.tick(cfg.FPS)
+
+        self.keys: ScancodeWrapper = pg.key.get_pressed()
+        self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
+        self.mouse: tuple = pg.mouse.get_pressed()
+        self.just_mouse: tuple = pg.mouse.get_just_pressed()
+        self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
+
+    def draw(self) -> None:
+        self.wm.screen.fill((100, 100, 100))
+        pg.display.flip()
+
+    def run(self) -> None:
+        while True:
+            self.events()
+            self.update()
+            self.draw()

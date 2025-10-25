@@ -6,4 +6,4 @@ from pygame.typing import ColorLike, RectLike
 from pygame.key import ScancodeWrapper
 from ..core.config import SCREEN_RESOLUTION
 
-__all__ = [Vector2, Rect, FRect, Surface, Mask, ColorLike, RectLike, ScancodeWrapper, SCREEN_RESOLUTION]
+__all__ = ['Vector2', 'Rect', 'FRect', 'Surface', 'Mask', 'ColorLike', 'RectLike', 'ScancodeWrapper', 'SCREEN_RESOLUTION']
