@@ -21,7 +21,7 @@ class Game:
         for e in pg.event.get():
             if e.type == pg.QUIT:
                 sys.exit()
-            if e.type == pg.K_DOWN:
+            if e.type == pg.KEYDOWN:
                 if e.key == pg.K_F11:
                     self.wm.toggle_fullscreen()
 
