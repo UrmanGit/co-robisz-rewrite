@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files">
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="refactor[utils.py]: add relative_path var in load_animations() for readability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/left.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/leftdown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/leftup.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/right.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/rightdown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/rightup.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/player/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tests/image_load_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tests/image_load_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/map/room.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/room.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761848219954</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat[utils.py]: add load_animations() func that loads .gif files from data/animations&#10;&#10;add data/animations folder where .gif files are stored">
+      <option name="closed" value="true" />
+      <created>1762692419126</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762692419126</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor[utils.py]: add relative_path var in load_animations() for readability">
+      <option name="closed" value="true" />
+      <created>1762692561038</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762692561038</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +237,8 @@
     <MESSAGE value="test[game/tests]: add pathlib_test.py" />
     <MESSAGE value="refactor[game/commons]: replace builtins/ with game/commons" />
     <MESSAGE value="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files" />
+    <MESSAGE value="feat[utils.py]: add load_animations() func that loads .gif files from data/animations&#10;&#10;add data/animations folder where .gif files are stored" />
+    <MESSAGE value="refactor[utils.py]: add relative_path var in load_animations() for readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor[utils.py]: add relative_path var in load_animations() for readability" />
   </component>
 </project>

@@ -2,7 +2,7 @@ import pygame as pg
 pg.init()
 
 import pathlib
-from . import config as cfg
+import game.core.config as cfg
 
 def load_images(path: pathlib.Path) -> dict[str, pg.Surface]:
     images: dict[str, pg.Surface] = {}

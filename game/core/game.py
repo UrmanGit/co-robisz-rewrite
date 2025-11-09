@@ -3,9 +3,9 @@ pg.init()
 
 import sys
 
-from .window import WindowManager as wm
-from . import config as cfg
-from ..commons import *
+from game.core.window import WindowManager as wm
+import game.core.config as cfg
+from game.commons import *
 
 class Game:
     def __init__(self) -> None:

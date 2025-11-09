@@ -1,5 +1,5 @@
-from . import config as cfg
-from ..commons import *
+import game.core.config as cfg
+from game.commons import *
 import pygame as pg
 
 class WindowManager:
