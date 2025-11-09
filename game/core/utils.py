@@ -19,5 +19,6 @@ def load_animations(path: pathlib.Path) -> dict[str, list[tuple[pg.Surface, floa
         animation = pg.image.load_animation(path)
         for pair in animation:
             pair[0].convert_alpha() if pair[0].get_alpha() else pair[0].convert()
-        animations[str(path.relative_to(cfg.DATA / 'animations'))] = animation
+        relative_path = path.relative_to(cfg.DATA / 'animations')
+        animations[str(relative_path)] = animation
     return animations
