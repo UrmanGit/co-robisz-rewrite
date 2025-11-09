@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="">
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/leftdown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/leftup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/rightdown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/rightup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/player/up.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tests/image_load_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tests/image_load_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.config.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.pathlib_test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pathlib_test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wojtek\Documents\GitHub\co-robisz-rewrite" />
@@ -186,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761581688192</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files">
+      <option name="closed" value="true" />
+      <created>1761848219954</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761848219954</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +226,7 @@
     <MESSAGE value="feat[map]: add tilemaps.py" />
     <MESSAGE value="test[game/tests]: add pathlib_test.py" />
     <MESSAGE value="refactor[game/commons]: replace builtins/ with game/commons" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor[game/commons]: replace builtins/ with game/commons" />
+    <MESSAGE value="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files" />
   </component>
 </project>
