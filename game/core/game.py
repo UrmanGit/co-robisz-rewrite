@@ -12,8 +12,8 @@ class Game:
         self.wm = wm(cfg.window_size, False, pg.DOUBLEBUF)
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
-        self.mouse: tuple = pg.mouse.get_pressed()
-        self.just_mouse: tuple = pg.mouse.get_just_pressed()
+        self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
+        self.just_mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_just_pressed()
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
         self.clock: pg.Clock = pg.time.Clock()
 
@@ -30,8 +30,8 @@ class Game:
 
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
-        self.mouse: tuple = pg.mouse.get_pressed()
-        self.just_mouse: tuple = pg.mouse.get_just_pressed()
+        self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
+        self.just_mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_just_pressed()
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
 
     def draw(self) -> None:
