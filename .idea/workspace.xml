@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="fix[image_load_test.py]: add `if __name__ == &quot;__main__&quot;`">
-      <change afterPath="$PROJECT_DIR$/game/core/assets.py" afterDir="false" />
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat[assets.py]: add file assets.py where images and animations global dicts are">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/camroom/cr door.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/camroom/door.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/camroom/cr floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/camroom/floor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/camroom/cr wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/camroom/wall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag crate big.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/crate_big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag crate.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/crate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag door 0.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/door_open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag door 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/door_closed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/floor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag key.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/key.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/mag wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazynek/wall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -124,7 +136,11 @@
       <option name="presentableId" value="Default" />
       <updated>1758644210279</updated>
       <workItem from="1762778724108" duration="90000" />
-      <workItem from="1762778832234" duration="1660000" />
+      <workItem from="1762778832234" duration="1922000" />
+      <workItem from="1762780777257" duration="1098000" />
+      <workItem from="1762865511303" duration="63000" />
+      <workItem from="1762865811165" duration="9000" />
+      <workItem from="1763397833671" duration="876000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -238,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762780295903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat[assets.py]: add file assets.py where images and animations global dicts are">
+      <option name="closed" value="true" />
+      <created>1762780695597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762780695597</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +294,8 @@
     <MESSAGE value="refactor[utils.py]: add relative_path var in load_animations() for readability" />
     <MESSAGE value="refactor: change relative imports to absolute in files other than __init__.py" />
     <MESSAGE value="fix[image_load_test.py]: add `if __name__ == &quot;__main__&quot;`" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix[image_load_test.py]: add `if __name__ == &quot;__main__&quot;`" />
+    <MESSAGE value="feat[assets.py]: add file assets.py where images and animations global dicts are" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[assets.py]: add file assets.py where images and animations global dicts are" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1762780500780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,1 +1,1 @@
-from . import commons, core, map, tests
+from . import commons, core, map
