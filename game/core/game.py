@@ -9,7 +9,7 @@ from game.commons import *
 
 class Game:
     def __init__(self) -> None:
-        self.wm = Wm(cfg.window_size, False, pg.DOUBLEBUF)
+        self.wm = Wm(cfg.window_size, True, pg.DOUBLEBUF | pg.SCALED)
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
