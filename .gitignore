@@ -20,6 +20,7 @@ env/
 *.7z
 *.rar
 *.txt
+!requirements.txt
 *.rc
 !data/*.txt
 !data/**/*.txt
