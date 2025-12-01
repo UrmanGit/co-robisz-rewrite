@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="style: rename files in data/images">
-      <change beforePath="$PROJECT_DIR$/game/commons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/commons/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/config.py" afterDir="false" />
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/assets.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/assets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +31,12 @@
     &quot;assignee&quot;: &quot;UrmanGit&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/UrmanGit/co-robisz-rewrite.git",
-    "accountId": "768eaf3f-66d4-4c78-b81b-39d2c79bbfec"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/UrmanGit/co-robisz-rewrite.git&quot;,
+    &quot;accountId&quot;: &quot;768eaf3f-66d4-4c78-b81b-39d2c79bbfec&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -54,6 +54,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.config.executor": "Run",
+    "Python.game.executor": "Run",
     "Python.main.executor": "Run",
     "Python.pathlib_test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -69,7 +70,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -114,8 +115,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
-        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28238.29" />
+        <option value="bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29" />
       </set>
     </attachedChunks>
   </component>
@@ -131,7 +132,11 @@
       <workItem from="1762780777257" duration="1098000" />
       <workItem from="1762865511303" duration="63000" />
       <workItem from="1762865811165" duration="9000" />
-      <workItem from="1763397833671" duration="1327000" />
+      <workItem from="1763397833671" duration="2691000" />
+      <workItem from="1764545893097" duration="18000" />
+      <workItem from="1764545923143" duration="280000" />
+      <workItem from="1764546253618" duration="438000" />
+      <workItem from="1764546702213" duration="1773000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -261,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763398799038</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display.">
+      <option name="closed" value="true" />
+      <created>1763399538163</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1763399538163</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,9 +308,11 @@
     <MESSAGE value="fix[image_load_test.py]: add `if __name__ == &quot;__main__&quot;`" />
     <MESSAGE value="feat[assets.py]: add file assets.py where images and animations global dicts are" />
     <MESSAGE value="style: rename files in data/images" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: rename files in data/images" />
+    <MESSAGE value="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1763399311045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1764548288062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$game.coverage" NAME="game Coverage Results" MODIFIED="1763400534285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />
   </component>
 </project>
