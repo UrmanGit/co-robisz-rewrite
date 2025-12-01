@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/assets.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/assets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat[game.py]: add window title and icon" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +131,7 @@
       <workItem from="1764545893097" duration="18000" />
       <workItem from="1764545923143" duration="280000" />
       <workItem from="1764546253618" duration="438000" />
-      <workItem from="1764546702213" duration="1773000" />
+      <workItem from="1764546702213" duration="2115000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -274,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763399538163</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix[utils.py]: rename &quot;path&quot; arg in load_ functions to &quot;basepath&quot;&#10;&#10;add load_image function that load one image">
+      <option name="closed" value="true" />
+      <created>1764548786231</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764548786231</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat[game.py]: add window title and icon">
+      <option name="closed" value="true" />
+      <created>1764548829417</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1764548829417</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,10 +320,12 @@
     <MESSAGE value="feat[assets.py]: add file assets.py where images and animations global dicts are" />
     <MESSAGE value="style: rename files in data/images" />
     <MESSAGE value="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add pygame.SCALED flag&#10;&#10;the window now scales to different screen sizes, so 1080p display sees things the same size as a person using 1440p display." />
+    <MESSAGE value="fix[utils.py]: rename &quot;path&quot; arg in load_ functions to &quot;basepath&quot;&#10;&#10;add load_image function that load one image" />
+    <MESSAGE value="feat[game.py]: add window title and icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[game.py]: add window title and icon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1764548288062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1764548833252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$game.coverage" NAME="game Coverage Results" MODIFIED="1763400534285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />
   </component>
 </project>

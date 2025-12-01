@@ -21,11 +21,11 @@ class Game:
         pg.display.set_icon(ast.image(cfg.DATA / "ikona.png"))
 
     def events(self) -> None:
-        for e in pg.event.get():
-            if e.type == pg.QUIT:
+        for event in pg.event.get():
+            if event.type == pg.QUIT:
                 sys.exit()
-            if e.type == pg.KEYDOWN:
-                if e.key == pg.K_F11:
+            if event.type == pg.KEYDOWN:
+                if event.key == pg.K_F11:
                     self.wm.toggle_fullscreen()
 
     def update(self) -> None:
