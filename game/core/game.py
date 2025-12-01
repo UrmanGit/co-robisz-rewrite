@@ -16,6 +16,9 @@ class Game:
         self.just_mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_just_pressed()
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
         self.clock: pg.Clock = pg.time.Clock()
+        pg.display.set_caption(cfg.TITLE)
+        import game.core.assets as ast
+        pg.display.set_icon(ast.image(cfg.DATA / "ikona.png"))
 
     def events(self) -> None:
         for e in pg.event.get():
