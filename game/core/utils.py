@@ -1,6 +1,9 @@
 import pygame as pg
 import pathlib
 
+from pygame import Color
+
+
 def load_images(basepath: pathlib.Path) -> dict[str, pg.Surface]:
     images: dict[str, pg.Surface] = {}
     for path in (basepath / 'images').rglob("*.png"):
@@ -24,3 +27,10 @@ def load_animations(basepath: pathlib.Path) -> dict[str, list[tuple[pg.Surface, 
         relative_path = path.relative_to(basepath / 'animations')
         animations[str(relative_path)] = animation
     return animations
+
+def hex_col(hex_string: str) -> Color:
+    """
+    Returns a color from a hex string.
+    :param hex_string: Hex string (e.g. "#08061B")
+    """
+    return pg.Color.from_hex(hex_string)

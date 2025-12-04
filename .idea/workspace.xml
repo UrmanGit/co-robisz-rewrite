@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="style[game.py]: rename &quot;e&quot; var in events method to &quot;event&quot;">
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat">
+      <change beforePath="$PROJECT_DIR$/.idea/co-robisz-rewrite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/co-robisz-rewrite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/assets.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/assets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/map/room.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +57,14 @@
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.aacircle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aliens.executor&quot;: &quot;Run&quot;,
     &quot;Python.config.executor&quot;: &quot;Run&quot;,
     &quot;Python.game.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.pathlib_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prevent_display_stretching.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scaletest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -68,7 +79,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -88,6 +99,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHON_GIL" value="0" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -135,6 +147,11 @@
       <workItem from="1764545923143" duration="280000" />
       <workItem from="1764546253618" duration="438000" />
       <workItem from="1764546702213" duration="2728000" />
+      <workItem from="1764550476030" duration="1412000" />
+      <workItem from="1764617837873" duration="585000" />
+      <workItem from="1764865941094" duration="743000" />
+      <workItem from="1764870854580" duration="3117000" />
+      <workItem from="1764875052271" duration="1607000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -296,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764548986034</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="feat[requirements.txt]: add requirements.txt file">
+      <option name="closed" value="true" />
+      <created>1764550576816</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764550576816</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,10 +359,16 @@
     <MESSAGE value="fix[utils.py]: rename &quot;path&quot; arg in load_ functions to &quot;basepath&quot;&#10;&#10;add load_image function that load one image" />
     <MESSAGE value="feat[game.py]: add window title and icon" />
     <MESSAGE value="style[game.py]: rename &quot;e&quot; var in events method to &quot;event&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="style[game.py]: rename &quot;e&quot; var in events method to &quot;event&quot;" />
+    <MESSAGE value="feat[requirements.txt]: add requirements.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[requirements.txt]: add requirements.txt file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1764549116587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$scaletest.coverage" NAME="scaletest Coverage Results" MODIFIED="1764872374240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$config.coverage" NAME="config Coverage Results" MODIFIED="1764874344413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1764875679345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$aliens.coverage" NAME="aliens Coverage Results" MODIFIED="1764871982304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$prevent_display_stretching.coverage" NAME="prevent_display_stretching Coverage Results" MODIFIED="1764872263333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$aacircle.coverage" NAME="aacircle Coverage Results" MODIFIED="1764871917023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$game.coverage" NAME="game Coverage Results" MODIFIED="1763400534285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />
   </component>
 </project>
