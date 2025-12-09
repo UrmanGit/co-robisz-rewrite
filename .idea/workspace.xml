@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat">
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="style: clean the code up and rename files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/crate.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/crate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/crate_big.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/big_crate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/door_closed.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/closed_door.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/door_open.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/open_door.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/magazine_floor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/key.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/key.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/stachupainting.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/stachupainting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/magazynek/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/magazine/magazine_wall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/startroom/sr chair.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/startroom/startroom_chair.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/startroom/sr floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/startroom/startroom_floor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/rooms/startroom/sr wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/rooms/startroom/startroom_wall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/commons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/commons/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/assets.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/assets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/core/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/map/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/map/room.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/map/tilemaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/tilemaps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tests/image_load_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tests/image_load_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +49,9 @@
     &quot;accountId&quot;: &quot;768eaf3f-66d4-4c78-b81b-39d2c79bbfec&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -62,38 +63,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.aacircle.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aliens.executor&quot;: &quot;Run&quot;,
-    &quot;Python.config.executor&quot;: &quot;Run&quot;,
-    &quot;Python.game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pathlib_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.prevent_display_stretching.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scaletest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.aacircle.executor": "Run",
+    "Python.aliens.executor": "Run",
+    "Python.config.executor": "Run",
+    "Python.game.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pathlib_test.executor": "Run",
+    "Python.prevent_display_stretching.executor": "Run",
+    "Python.scaletest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wojtek\Documents\GitHub\co-robisz-rewrite" />
@@ -331,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764550576816</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="style: clean the code up">
+      <option name="closed" value="true" />
+      <created>1765236609191</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1765236609191</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +379,9 @@
     <MESSAGE value="feat[game.py]: add window title and icon" />
     <MESSAGE value="style[game.py]: rename &quot;e&quot; var in events method to &quot;event&quot;" />
     <MESSAGE value="feat[requirements.txt]: add requirements.txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[requirements.txt]: add requirements.txt file" />
+    <MESSAGE value="style: clean the code up and rename files" />
+    <MESSAGE value="style: clean the code up and rename files" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: clean the code up and rename files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$scaletest.coverage" NAME="scaletest Coverage Results" MODIFIED="1764872374240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
