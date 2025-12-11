@@ -21,5 +21,5 @@ def dict_animations() -> None:
 # A shortcut for loading a single image.
 def image(path, scale_factor: int = SCALE_FACTOR) -> Surface:
     """JiT-loads a single image."""
-    an_image = load_image(path, SCALE_FACTOR)
+    an_image = load_image(path, scale_factor)
     return an_image
