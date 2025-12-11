@@ -4,7 +4,6 @@ pg.init()
 
 import sys
 
-from game.commons import *
 import game.core.config as config
 import game.core.utils as utils
 from game.core.window import WindowManager
@@ -30,8 +29,8 @@ class Game:
         game.map.tilemaps.load_tiles()
 
         # Pygame stuff
-        self.keys: ScancodeWrapper = pg.key.get_pressed()
-        self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
+        self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
+        self.just_keys: pg.key.ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_pressed(5)
         self.just_mouse: tuple[bool, bool, bool, bool, bool] = (
             pg.mouse.get_just_pressed()
@@ -61,8 +60,8 @@ class Game:
     def update(self) -> None:
         self.clock.tick(config.FPS)
 
-        self.keys: ScancodeWrapper = pg.key.get_pressed()
-        self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
+        self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
+        self.just_keys: pg.key.ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
         self.just_mouse: tuple[bool, bool, bool, bool, bool] = (
             pg.mouse.get_just_pressed()
