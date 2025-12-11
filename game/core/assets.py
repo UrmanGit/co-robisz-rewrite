@@ -1,16 +1,22 @@
 from game.core.utils import load_animations, load_images, load_image
-from game.core.config import DATA
+from game.core.config import DATA, SCALE_FACTOR
 from pygame import Surface
 
 images: dict[str, Surface] = {}
 animations: dict[str, list[tuple[Surface, float]]] = {}
 
 def dict_images() -> None:
+    """Loads images to global `images` dict."""
     global images
-    images = load_images(DATA / "images")
+    images = load_images(DATA / "images", SCALE_FACTOR)
 
 def dict_animations() -> None:
+    """Loads animations to global `animations` dict."""
     global animations
-    animations = load_animations(DATA / "animations")
+    animations = load_animations(DATA / "animations", SCALE_FACTOR)
 
-image = load_image
+# A shortcut for loading a single image.
+def image(path, scale_factor: int = SCALE_FACTOR) -> Surface:
+    """JiT-loads a single image."""
+    an_image = load_image(path, SCALE_FACTOR)
+    return an_image
