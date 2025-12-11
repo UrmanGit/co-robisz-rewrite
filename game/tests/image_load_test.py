@@ -12,5 +12,5 @@ if __name__ == "__main__":
     from game.core.config import DATA
     from game.core.utils import load_images
 
-    example = load_images(DATA)
+    example = load_images(DATA, 3)
     # pprint(example)
