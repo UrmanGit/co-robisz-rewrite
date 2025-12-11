@@ -1,6 +1,5 @@
 """Commonly used types and aliases re-exported for convenience."""
 
-
 from pygame.key import ScancodeWrapper
 from pygame.mask import Mask
 from pygame.math import Vector2 as v2

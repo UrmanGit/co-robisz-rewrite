@@ -24,7 +24,9 @@ def load_image(path: pathlib.Path, scale_factor: int) -> pg.Surface:
     return image
 
 
-def load_animations(path: pathlib.Path, scale_factor: int) -> dict[str, list[tuple[pg.Surface, float]]]:
+def load_animations(
+    path: pathlib.Path, scale_factor: int
+) -> dict[str, list[tuple[pg.Surface, float]]]:
     """Recursively loads all .gif files from a given folder"""
     animations: dict[str, list[tuple[pg.Surface, float]]] = {}
 

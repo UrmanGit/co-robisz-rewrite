@@ -33,7 +33,9 @@ class Game:
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_pressed(5)
-        self.just_mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_just_pressed()
+        self.just_mouse: tuple[bool, bool, bool, bool, bool] = (
+            pg.mouse.get_just_pressed()
+        )
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
         self.clock: pg.Clock = pg.time.Clock()
 
@@ -42,10 +44,11 @@ class Game:
         pg.display.set_icon(assets.image(config.DATA / "icon.png"))
 
         # Main stuff
-        self.magazine = game.map.room.Room((config.BASE_RESOLUTION[0] // 2,
-                                            config.BASE_RESOLUTION[1] // 2),
-                                           tilemap=game.map.tilemaps.magazine_tilemap,
-                                           tiles=game.map.tilemaps.magazine_tiles)
+        self.magazine = game.map.room.Room(
+            (config.BASE_RESOLUTION[0] // 2, config.BASE_RESOLUTION[1] // 2),
+            tilemap=game.map.tilemaps.magazine_tilemap,
+            tiles=game.map.tilemaps.magazine_tiles,
+        )
 
     def events(self) -> None:
         for event in pg.event.get():
@@ -61,12 +64,14 @@ class Game:
         self.keys: ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
-        self.just_mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_just_pressed()
+        self.just_mouse: tuple[bool, bool, bool, bool, bool] = (
+            pg.mouse.get_just_pressed()
+        )
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
 
     def draw(self) -> None:
         self.wm.screen.fill(utils.hex_col("#0C0C12"))
-        self.magazine.draw(screen = self.wm.screen)
+        self.magazine.draw(screen=self.wm.screen)
         pg.display.flip()
 
     def run(self) -> None:

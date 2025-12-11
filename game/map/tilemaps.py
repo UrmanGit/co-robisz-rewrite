@@ -13,4 +13,5 @@ def load_tiles() -> None:
         0: assets.images["rooms/magazine/magazine_floor.png"],
         1: assets.images["rooms/magazine/magazine_wall.png"],
         2: assets.images["rooms/magazine/closed_magazine_door.png"],
-        3: assets.images["outer_walls/hor.png"]}
+        3: assets.images["outer_walls/hor.png"],
+    }
