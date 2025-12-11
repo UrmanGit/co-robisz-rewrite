@@ -1,16 +1,16 @@
-import game.core.utils
-import game.core.config
-import pygame as pg
+from game.core.utils import load_animations, load_images, load_image
+from game.core.config import DATA
+from pygame import Surface
 
-images: dict[str, pg.Surface] = {}
-animations: dict[str, list[tuple[pg.Surface, float]]] = {}
+images: dict[str, Surface] = {}
+animations: dict[str, list[tuple[Surface, float]]] = {}
 
 def dict_images() -> None:
     global images
-    images = game.core.utils.load_images(game.core.config.DATA)
+    images = load_images(DATA / "images")
 
 def dict_animations() -> None:
     global animations
-    animations = game.core.utils.load_animations(game.core.config.DATA)
+    animations = load_animations(DATA / "animations")
 
-image = (lambda path: game.core.utils.load_image(path))
+image = load_image

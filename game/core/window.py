@@ -1,14 +1,15 @@
-import game.core.config
-from game.commons import *
 import pygame as pg
 
+import game.core.config as config
+from game.commons import *
+
 class WindowManager:
-    def __init__(self, size: tuple[int, int], _fullscreen: bool, flags: int, base_resolution: tuple[int, int] = game.core.config.BASE_RESOLUTION) -> None:
+    def __init__(self, size: tuple[int, int], _fullscreen: bool, flags: int, base_resolution: tuple[int, int] = config.BASE_RESOLUTION) -> None:
         """
         Creates a game window.
 
         :param size: Game window size
-        :param _fullscreen: Defines if game window is _fullscreen
+        :param _fullscreen: Defines if a game window is _fullscreen
         :param flags: Flags used to make a pygame.Surface object
         :param base_resolution: Screen resolution used when _fullscreen = True
         """
@@ -25,6 +26,6 @@ class WindowManager:
                                                    self.flags | (pg.FULLSCREEN if self._fullscreen else 0))
 
     def toggle_fullscreen(self) -> None:
-        """Toggles fullscreen mode. Currently, doesn't support resizable window."""
+        """Toggles fullscreen mode, doesn't support resizable windows (only windowed)"""
         self._fullscreen = not self._fullscreen
         self.update_screen()
