@@ -95,8 +95,12 @@ class Game:
 
     def draw(self) -> None:
         self.wm.screen.fill(utils.hex_col("#0C0C12"))
-        self.magazine.draw(screen=self.wm.screen)
+
+        # Rooms
         self.startroom.draw(screen=self.wm.screen)
+        self.magazine.draw(screen=self.wm.screen)
+
+        # Update the screen
         pg.display.flip()
 
     def run(self) -> None:
