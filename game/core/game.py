@@ -43,10 +43,22 @@ class Game:
         pg.display.set_icon(assets.image(config.DATA / "icon.png"))
 
         # Main stuff
+        room_pos_x: int = self.wm.screen.width // 2 - len(game.map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
+        room_pos_y: int = int(self.wm.screen.height // 1.25 - len(game.map.tilemaps.magazine_tilemap) * config.TILE_SIZE // 2)
+
         self.magazine = game.map.room.Room(
-            (config.BASE_RESOLUTION[0] // 2, config.BASE_RESOLUTION[1] // 2),
-            tilemap=game.map.tilemaps.magazine_tilemap,
-            tiles=game.map.tilemaps.magazine_tiles,
+            offset = (room_pos_x, room_pos_y),
+            tilemap = game.map.tilemaps.magazine_tilemap,
+            tiles = game.map.tilemaps.magazine_tiles
+        )
+
+        room_pos_x = self.wm.screen.width // 2 - len(game.map.tilemaps.startroom_tilemap[0]) * config.TILE_SIZE // 2
+        room_pos_y = room_pos_y - (len(game.map.tilemaps.startroom_tilemap) - 1) * config.TILE_SIZE - 5 * config.SCALE_FACTOR
+
+        self.startroom = game.map.room.Room(
+            offset = (room_pos_x, room_pos_y),
+            tilemap = game.map.tilemaps.startroom_tilemap,
+            tiles = game.map.tilemaps.startroom_tiles
         )
 
     def events(self) -> None:
@@ -58,7 +70,7 @@ class Game:
                     self.wm.toggle_fullscreen()
 
     def update(self) -> None:
-        self.clock.tick(config.FPS)
+        dt: int = self.clock.tick(config.FPS)
 
         self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: pg.key.ScancodeWrapper = pg.key.get_just_pressed()
@@ -71,6 +83,7 @@ class Game:
     def draw(self) -> None:
         self.wm.screen.fill(utils.hex_col("#0C0C12"))
         self.magazine.draw(screen=self.wm.screen)
+        self.startroom.draw(screen=self.wm.screen)
         pg.display.flip()
 
     def run(self) -> None:
