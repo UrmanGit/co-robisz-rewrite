@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="refactor: resize all images, even these which non-transparent parts weren't 24x24 to 24x24">
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat: Add rooms' outer walls, improve tilemaps and refactor images">
+      <change afterPath="$PROJECT_DIR$/game/entities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/entities/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/outer_walls/top ld.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/outer_walls/top rd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/outer_walls/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/map/tilemaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/tilemaps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="103" />
+    <option name="cachedIndexableFilesCount" value="109" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -44,6 +41,9 @@
     &quot;accountId&quot;: &quot;768eaf3f-66d4-4c78-b81b-39d2c79bbfec&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/game/map/tilemaps.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -165,7 +165,7 @@
       <workItem from="1765480085733" duration="5342000" />
       <workItem from="1765494967768" duration="710000" />
       <workItem from="1765496677679" duration="6382000" />
-      <workItem from="1765544670514" duration="3818000" />
+      <workItem from="1765544670514" duration="9002000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -439,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765545452020</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat: Add rooms' outer walls, improve tilemaps and refactor images">
+      <option name="closed" value="true" />
+      <created>1765548767593</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1765548767593</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat[utils.py]: add load_animations() func that loads .gif files from data/animations&#10;&#10;add data/animations folder where .gif files are stored" />
     <MESSAGE value="refactor[utils.py]: add relative_path var in load_animations() for readability" />
     <MESSAGE value="refactor: change relative imports to absolute in files other than __init__.py" />
     <MESSAGE value="fix[image_load_test.py]: add `if __name__ == &quot;__main__&quot;`" />
@@ -482,11 +489,12 @@
     <MESSAGE value="style: run `black` and remove unused import from `tilemaps.py`" />
     <MESSAGE value="style[README.md]: correct typos and stuff" />
     <MESSAGE value="refactor: resize all images, even these which non-transparent parts weren't 24x24 to 24x24" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: resize all images, even these which non-transparent parts weren't 24x24 to 24x24" />
+    <MESSAGE value="feat: Add rooms' outer walls, improve tilemaps and refactor images" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add rooms' outer walls, improve tilemaps and refactor images" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$prevent_display_stretching.coverage" NAME="prevent_display_stretching Coverage Results" MODIFIED="1764872263333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
-    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1765548521271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1765548560833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$scaletest.coverage" NAME="scaletest Coverage Results" MODIFIED="1764872374240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$aacircle.coverage" NAME="aacircle Coverage Results" MODIFIED="1764871917023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$game.coverage" NAME="game Coverage Results" MODIFIED="1763400534285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />
