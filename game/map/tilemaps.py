@@ -1,6 +1,5 @@
 import pygame as pg
 import game.core.assets as assets
-import game.core.config as config
 
 # fmt: off
 magazine_tilemap: list[list[int]] = [[1, 1, 2, 1],
