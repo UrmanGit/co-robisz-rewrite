@@ -43,22 +43,35 @@ class Game:
         pg.display.set_icon(assets.image(config.DATA / "icon.png"))
 
         # Main stuff
-        room_pos_x: int = self.wm.screen.width // 2 - len(game.map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
-        room_pos_y: int = int(self.wm.screen.height // 1.25 - len(game.map.tilemaps.magazine_tilemap) * config.TILE_SIZE // 2)
-
-        self.magazine = game.map.room.Room(
-            offset = (room_pos_x, room_pos_y),
-            tilemap = game.map.tilemaps.magazine_tilemap,
-            tiles = game.map.tilemaps.magazine_tiles
+        room_pos_x: int = (
+            self.wm.screen.width // 2
+            - len(game.map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
+        )
+        room_pos_y: int = int(
+            self.wm.screen.height // 1.25
+            - len(game.map.tilemaps.magazine_tilemap) * config.TILE_SIZE // 2
         )
 
-        room_pos_x = self.wm.screen.width // 2 - len(game.map.tilemaps.startroom_tilemap[0]) * config.TILE_SIZE // 2
-        room_pos_y = room_pos_y - (len(game.map.tilemaps.startroom_tilemap) - 1) * config.TILE_SIZE - 5 * config.SCALE_FACTOR
+        self.magazine = game.map.room.Room(
+            offset=(room_pos_x, room_pos_y),
+            tilemap=game.map.tilemaps.magazine_tilemap,
+            tiles=game.map.tilemaps.magazine_tiles,
+        )
+
+        room_pos_x = (
+            self.wm.screen.width // 2
+            - len(game.map.tilemaps.startroom_tilemap[0]) * config.TILE_SIZE // 2
+        )
+        room_pos_y = (
+            room_pos_y
+            - (len(game.map.tilemaps.startroom_tilemap) - 1) * config.TILE_SIZE
+            - 5 * config.SCALE_FACTOR
+        )
 
         self.startroom = game.map.room.Room(
-            offset = (room_pos_x, room_pos_y),
-            tilemap = game.map.tilemaps.startroom_tilemap,
-            tiles = game.map.tilemaps.startroom_tiles
+            offset=(room_pos_x, room_pos_y),
+            tilemap=game.map.tilemaps.startroom_tilemap,
+            tiles=game.map.tilemaps.startroom_tiles,
         )
 
     def events(self) -> None:
