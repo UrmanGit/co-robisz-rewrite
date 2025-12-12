@@ -7,5 +7,5 @@ class Movable:
         self.speed: int = speed
 
     def move(self):
-        ... # TODO: ADD MOVE FUNCTION WITH HITBOX CHECKING AND SQUARE ROOT DIAGONAL MOVING.
+        ... # Todo: Add move function that checks for collisions with hitbox. Add hitboxes 💀
 
