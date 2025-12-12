@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="feat[map]: add startroom the same way as added magazine&#10;&#10;modify `data/images/rooms/magazine/magazine_floor.png` texture">
-      <change beforePath="$PROJECT_DIR$/game/map/tilemaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/map/tilemaps.py" afterDir="false" />
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="style: run `black` and remove unused import from `tilemaps.py`">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <workItem from="1765477931622" duration="1510000" />
       <workItem from="1765480085733" duration="5342000" />
       <workItem from="1765494967768" duration="710000" />
-      <workItem from="1765496677679" duration="4445000" />
+      <workItem from="1765496677679" duration="6336000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -409,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765501741921</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="style: run `black` and remove unused import from `tilemaps.py`">
+      <option name="closed" value="true" />
+      <created>1765501932378</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1765501932378</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test[game/tests]: add pathlib_test.py" />
     <MESSAGE value="refactor[game/commons]: replace builtins/ with game/commons" />
     <MESSAGE value="feat[utils.py]: add load_images() func that recursively loads all images from data/images&#10;&#10;add DATA constant representing data folder in pathlib.Path to config.py&#10;rename pathlib_test.py to image_load_test.py&#10;add package imports to __init__.py files" />
     <MESSAGE value="feat[utils.py]: add load_animations() func that loads .gif files from data/animations&#10;&#10;add data/animations folder where .gif files are stored" />
@@ -452,7 +460,8 @@
     <MESSAGE value="fix[assets.py]: make `scale_factor` arg actually do something" />
     <MESSAGE value="refactor: remove `commons` because it is useless" />
     <MESSAGE value="feat[map]: add startroom the same way as added magazine&#10;&#10;modify `data/images/rooms/magazine/magazine_floor.png` texture" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[map]: add startroom the same way as added magazine&#10;&#10;modify `data/images/rooms/magazine/magazine_floor.png` texture" />
+    <MESSAGE value="style: run `black` and remove unused import from `tilemaps.py`" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: run `black` and remove unused import from `tilemaps.py`" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$prevent_display_stretching.coverage" NAME="prevent_display_stretching Coverage Results" MODIFIED="1764872263333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
