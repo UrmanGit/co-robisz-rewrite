@@ -10,11 +10,12 @@ magazine_tilemap: list[list[int]] = [[-4, 1, 1, 2, 1, 4],
 magazine_tiles: dict[int, pg.Surface] = {}
 
 # fmt: off
-startroom_tilemap: list[list[int]] = [[-8, 2, 2, 2, 2, 2, 2, 8],
-                                      [-4, 1, 1, 1, 1, 1, 1, 4],
-                                      [-4, 0, 0, 0, 0, 0, 0, 4],
-                                      [-4, 0, 0, 0, 0, 0, 0, 4],
-                                      [-6, -7, 3, 3, 3, 3, 7, 6]]
+startroom_tilemap: list[list[int]] = [[-8, 2, 2, 2, 2, 2, 2, 2, 2, 8],
+                                      [-4, 1, 1, 1, 1, 1, 1, 1, 1, 4],
+                                      [-4, 0, 0, 0, 0, 0, 0, 0, 0, 4],
+                                      [-4, 0, 0, 0, 0, 0, 0, 0, 0, 4],
+                                      [-4, 0, 0, 0, 0, 0, 0, 0, 0, 4],
+                                      [-6, 3, -7, 3, 3, 3, 3, 7, 3, 6]]
 # fmt: on
 startroom_tiles: dict[int, pg.Surface] = {}
 

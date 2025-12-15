@@ -1,6 +1,9 @@
 import pygame as pg
 
 import game.core.config as config
+import game.collisions as collisions
+
+from game.collisions.typing import Hitbox
 
 
 class Room:
@@ -13,9 +16,9 @@ class Room:
         self.pos: pg.Vector2 = pg.Vector2(offset)
         self.tilemap: list[list[int]] = tilemap
         self.tiles: dict[int, pg.Surface] = tiles
-        self.hitbox: pg.Rect = pg.Rect(
+        self.hitbox: Hitbox = collisions.hitbox.RoomHitbox(
             self.pos,
-            (config.TILE_SIZE * len(tilemap[0]), config.TILE_SIZE * len(tilemap)),
+            size = (config.TILE_SIZE * len(tilemap[0]), config.TILE_SIZE * len(tilemap)),
         )
 
     def draw(self, screen: pg.Surface) -> None:
