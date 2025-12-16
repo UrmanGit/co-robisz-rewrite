@@ -19,32 +19,43 @@ class Player(base.Entity):
         left: bool = keys[pg.K_a]
         right: bool = keys[pg.K_d]
 
+        animation = False
         if up and not (left or right or down):
             new_pos = pg.Vector2(0, -speed)
             self.current_animation = "up"
+            animation = True
         elif down and not (left or right or up):
             new_pos = pg.Vector2(0, speed)
             self.current_animation = "down"
+            animation = True
         elif left and not (right or up or down):
             new_pos = pg.Vector2(-speed, 0)
             self.current_animation = "left"
+            animation = True
         elif right and not (left or up or down):
             new_pos = pg.Vector2(speed, 0)
             self.current_animation = "right"
+            animation = True
         elif up and right and not (left or down):
             new_pos = pg.Vector2(speed, -speed) / sqrt(2)
             self.current_animation = "rightup"
+            animation = True
         elif down and right and not (left or up):
             new_pos = pg.Vector2(speed, speed) / sqrt(2)
             self.current_animation = "rightdown"
+            animation = True
         elif up and left and not (right or down):
             new_pos = pg.Vector2(-speed, -speed) / sqrt(2)
             self.current_animation = "leftup"
+            animation = True
         elif down and left and not (right or up):
             new_pos = pg.Vector2(-speed, speed) / sqrt(2)
             self.current_animation = "leftdown"
+            animation = True
+        else:
+            self.image = self.animations_dict[self.current_animation][0][0]
 
-        if up or down or left or right:
+        if animation:
             self.animate(dt, self.current_animation)
 
         future_pos = self.pos + new_pos

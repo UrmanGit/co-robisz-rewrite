@@ -11,7 +11,7 @@ class BaseHitbox:
         self.rect: Rect = Rect(self.pos, self.size)
 
     def draw(self, screen: Surface) -> None:
-        draw.rect(screen, self.color, self.rect)
+        draw.rect(screen, self.color, self.rect, 1)
 
 
 class RoomHitbox(BaseHitbox):
@@ -43,6 +43,6 @@ class FurnitureHitbox(BaseHitbox):
                  ) -> None:
         BaseHitbox.__init__(self, pos, size, "aqua")
 
-    def move(self, pos: tuple[int, int] | Vector2) -> None:
+    def update(self, pos: tuple[int, int] | Vector2) -> None:
         self.pos = Vector2(pos)
         self.rect.pos = self.pos
