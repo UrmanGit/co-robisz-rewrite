@@ -33,7 +33,7 @@ class EntityHitbox(BaseHitbox):
 
     def update(self, pos: tuple[int, int] | Vector2) -> None:
         self.pos = Vector2(pos)
-        self.rect.pos = self.pos
+        self.rect.update(self.pos, self.size)
 
 
 class FurnitureHitbox(BaseHitbox):

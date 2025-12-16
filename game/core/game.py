@@ -11,6 +11,7 @@ import game.core.assets as assets
 
 import game.map.room
 import game.map.tilemaps
+import game.entities.player as player
 
 
 class Game:
@@ -74,6 +75,17 @@ class Game:
             tiles=game.map.tilemaps.startroom_tiles,
         )
 
+        player_animations_dict: dict[str, list[tuple[pg.Surface, float]]] = {}
+        for key in assets.animations:
+            new_key = key.split("/")[1].split(".")[0]
+            player_animations_dict[new_key] = assets.animations[key]
+
+        self.player = player.Player(
+            self.magazine.hitbox.pos + self.magazine.hitbox.size // 2,
+            config.PLAYER_SPEED,
+            player_animations_dict,
+        )
+
     def events(self) -> None:
         for event in pg.event.get():
             if event.type == pg.QUIT:
@@ -93,12 +105,18 @@ class Game:
         )
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
 
+        self.player.moving(self.keys, dt, self.magazine)
+        self.player.update()
+
     def draw(self) -> None:
         self.wm.screen.fill(utils.hex_col("#0C0C12"))
 
         # Rooms
-        self.startroom.draw(screen=self.wm.screen)
-        self.magazine.draw(screen=self.wm.screen)
+        self.startroom.draw(self.wm.screen)
+        self.magazine.draw(self.wm.screen)
+
+        # Player
+        self.player.draw(self.wm.screen)
 
         # Update the screen
         pg.display.flip()

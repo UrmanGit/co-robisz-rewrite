@@ -9,3 +9,4 @@ FPS: int = 60
 DATA: pathlib.Path = pathlib.Path(__file__).parent.parent.parent / "data"
 SCALE_FACTOR: int = 3
 TILE_SIZE: int = 24 * SCALE_FACTOR
+PLAYER_SPEED: int = 200

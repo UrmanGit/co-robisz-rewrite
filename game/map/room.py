@@ -17,13 +17,16 @@ class Room:
         self.tilemap: list[list[int]] = tilemap
         self.tiles: dict[int, pg.Surface] = tiles
         self.hitbox: Hitbox = collisions.hitbox.RoomHitbox(
-            self.pos,
-            size = (config.TILE_SIZE * len(tilemap[0]), config.TILE_SIZE * len(tilemap)),
+            (int(self.pos.x) + config.TILE_SIZE, int(self.pos.y) + config.TILE_SIZE),
+            size = (config.TILE_SIZE * (len(tilemap[0]) - 2), config.TILE_SIZE * (len(tilemap) - 2)),
         )
 
-    def draw(self, screen: pg.Surface) -> None:
+    def draw(self, screen: pg.Surface, show_hitbox: bool = False) -> None:
         for i, row in enumerate(self.tilemap):
             for j, tile in enumerate(row):
                 tile_left = self.pos.x + config.TILE_SIZE * j
                 tile_top = self.pos.y + config.TILE_SIZE * i
                 screen.blit(self.tiles[tile], (tile_left, tile_top))
+
+        if show_hitbox:
+            self.hitbox.draw(screen)
