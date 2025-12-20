@@ -15,7 +15,7 @@ class Movable:
         self.pos += pg.Vector2(add_pos)
 
 
-class Animatable:
+class Animated:
     def __init__(self,
                  animations_dict: dict[str, list[tuple[pg.Surface, float]]]) -> None:
         self.animations_dict: dict[str, list[tuple[pg.Surface, float]]] = animations_dict
@@ -47,13 +47,13 @@ class Animatable:
             self.image = self.animations_dict[self.current_animation][self.current_frame][0]
 
 
-class Entity(Movable, Animatable):
+class Entity(Movable, Animated):
     def __init__(self,
                  pos: tuple[int, int] | pg.Vector2,
                  speed: float,
                  animations_dict: dict[str, list[tuple[pg.Surface, float]]]) -> None:
         Movable.__init__(self, pos, speed)
-        Animatable.__init__(self, animations_dict)
+        Animated.__init__(self, animations_dict)
 
         hitbox_width = self.image.width - self.image.width // 4
         hitbox_height = self.image.height // 8
