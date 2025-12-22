@@ -3,7 +3,7 @@ import pygame as pg
 import game.core.config as config
 import game.collisions as collisions
 
-from game.collisions.typing import Hitbox
+from game.typing import Hitbox
 
 
 class Room:

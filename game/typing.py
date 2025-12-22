@@ -1,4 +1,4 @@
-from . import hitbox
+import game.collisions.hitbox
 import typing
 
 
