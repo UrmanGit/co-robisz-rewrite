@@ -1,6 +1,6 @@
 import pygame as pg
 import game.collisions.hitbox as hitbox
-from game.collisions.typing import Hitbox
+from game.typing import Hitbox
 
 
 class Movable:
