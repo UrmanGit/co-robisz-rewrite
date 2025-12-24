@@ -33,6 +33,8 @@ class Animated:
         if animation != self.current_animation:
             print(f"{self.current_animation = }")
             self.current_animation = animation
+            self.current_frame = 0
+            self.image = self.animations_dict[self.current_animation][self.current_frame][0]
 
         self.current_delay: float = self.animations_dict[self.current_animation][self.current_frame][1]
 
