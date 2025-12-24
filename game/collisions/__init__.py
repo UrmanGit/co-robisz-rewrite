@@ -1,1 +1,1 @@
-from . import collisions, hitbox
+from . import hitbox
