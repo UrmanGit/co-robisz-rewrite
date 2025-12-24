@@ -1,14 +1,15 @@
 import pygame as pg
-
 pg.init()
 
 import sys
 
+# Game and code assets
 import game.core.config as config
 import game.core.utils as utils
 from game.core.window import WindowManager
 import game.core.assets as assets
 
+# Game stuff
 import game.map.room
 import game.map.tilemaps
 import game.entities.player as player
@@ -18,7 +19,6 @@ class Game:
     """A game"""
 
     def __init__(self) -> None:
-        """Here you define the variables"""
         # Create a screen
         self.wm = WindowManager(config.BASE_RESOLUTION, False, pg.DOUBLEBUF | pg.SCALED)
 
@@ -43,7 +43,7 @@ class Game:
         pg.display.set_caption(config.TITLE)
         pg.display.set_icon(assets.image(config.DATA / "icon.png"))
 
-        # Main stuff
+        # Game stuff
         room_pos_x: int = (
             self.wm.screen.width // 2
             - len(game.map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
@@ -88,15 +88,20 @@ class Game:
 
     def events(self) -> None:
         for event in pg.event.get():
-            if event.type == pg.QUIT:
+            # Quitting the game
+            if event.type == pg.QUIT or (event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE):
                 sys.exit()
+
+            # Keys handling
             if event.type == pg.KEYDOWN:
                 if event.key == pg.K_F11:
                     self.wm.toggle_fullscreen()
 
     def update(self) -> None:
+        # Delta time
         dt: int = self.clock.tick(config.FPS)
 
+        # Pygame stuff updating
         self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: pg.key.ScancodeWrapper = pg.key.get_just_pressed()
         self.mouse: tuple[bool, bool, bool] = pg.mouse.get_pressed()
@@ -105,10 +110,12 @@ class Game:
         )
         self.mouse_pos: tuple[int, int] = pg.mouse.get_pos()
 
+        # Player
         self.player.moving(self.keys, dt, self.magazine)
         self.player.update()
 
     def draw(self) -> None:
+        # Fill the screen with a cool color
         self.wm.screen.fill(utils.hex_col("#0C0C12"))
 
         # Rooms
@@ -122,6 +129,7 @@ class Game:
         pg.display.flip()
 
     def run(self) -> None:
+        # Game loop
         while True:
             self.events()
             self.update()

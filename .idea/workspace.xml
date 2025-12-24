@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="fix: remove `collisions` from __init__.py and modify typing.py">
-      <change beforePath="$PROJECT_DIR$/game/entities/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/entities/base.py" afterDir="false" />
-    </list>
+    <list default="true" id="b25065e3-4463-4b85-898f-ac7ce194f9a9" name="Changes" comment="fix: fix laggy player animation when changing movement direction" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +178,7 @@
       <workItem from="1765911937631" duration="2788000" />
       <workItem from="1765968470766" duration="2393000" />
       <workItem from="1766407607911" duration="952000" />
-      <workItem from="1766601777012" duration="521000" />
+      <workItem from="1766601777012" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add player images and animations, config.py">
       <option name="closed" value="true" />
@@ -510,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766602152262</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fix: fix laggy player animation when changing movement direction">
+      <option name="closed" value="true" />
+      <created>1766602453008</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1766602453008</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat[game.py]: add window title and icon" />
     <MESSAGE value="style[game.py]: rename &quot;e&quot; var in events method to &quot;event&quot;" />
     <MESSAGE value="feat[requirements.txt]: add requirements.txt file" />
     <MESSAGE value="style: clean the code up and rename files" />
@@ -565,11 +570,12 @@
     <MESSAGE value="fix: Make player slower and remove debug print" />
     <MESSAGE value="fix: " />
     <MESSAGE value="fix: remove `collisions` from __init__.py and modify typing.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove `collisions` from __init__.py and modify typing.py" />
+    <MESSAGE value="fix: fix laggy player animation when changing movement direction" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix laggy player animation when changing movement direction" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$prevent_display_stretching.coverage" NAME="prevent_display_stretching Coverage Results" MODIFIED="1764872263333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
-    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1766602300887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/co_robisz_rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1766602321309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$scaletest.coverage" NAME="scaletest Coverage Results" MODIFIED="1764872374240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$aacircle.coverage" NAME="aacircle Coverage Results" MODIFIED="1764871917023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/pygame/examples" />
     <SUITE FILE_PATH="coverage/co_robisz_rewrite$game.coverage" NAME="game Coverage Results" MODIFIED="1763400534285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game/core" />

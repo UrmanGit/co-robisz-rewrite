@@ -8,18 +8,13 @@ class Movable:
         self.pos: pg.Vector2 = pg.Vector2(pos)
         self.speed: float = speed
 
-    def move(self, new_pos: tuple[int, int] | pg.Vector2) -> None:
-        self.pos = pg.Vector2(new_pos)
-
-    def move_by(self, add_pos: tuple[int, int] | pg.Vector2) -> None:
-        self.pos += pg.Vector2(add_pos)
-
 
 class Animated:
     def __init__(self,
                  animations_dict: dict[str, list[tuple[pg.Surface, float]]]) -> None:
         self.animations_dict: dict[str, list[tuple[pg.Surface, float]]] = animations_dict
-        self.current_animation: str = "down"
+        self.current_animation: str = list(animations_dict.keys())[0]
+        self.current_frame: int = 0
         self.current_frame: int = 0
         self.animation_frames: int = len(animations_dict[self.current_animation])
         self.current_delay: float = self.animations_dict[self.current_animation][self.current_frame][1]
