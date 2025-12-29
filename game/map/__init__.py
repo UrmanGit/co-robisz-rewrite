@@ -1,1 +1,1 @@
-from . import room, tilemaps
+from . import room, tilemaps, furniture
