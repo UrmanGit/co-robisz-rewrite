@@ -1,6 +1,6 @@
-# A bank heist game, "Co robisz?"
+# A bank heist game, "Co robisz? (rewrite)"
 
-**Or "What do you do?" in English.**
+**Or "What do you do? (rewrite)" in English.**
 
 ## Game's backstory
 
@@ -27,5 +27,8 @@ First version of the game was made in pygame zero, in a single file. That's a re
 
 And that is - I hope - my last one.
 
+## Contributing
+
+I really want people to help me. Though the license and contributing files may look a bit too corporative, it's just for safety so people don't steal my game and I get my credits. If you want to help, just submit a PR! ...And read the `CONTRIBUTING.md` file. If you have questions, contact me via wojteku229@icloud.com
 
 *more to come soon*
