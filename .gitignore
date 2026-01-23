@@ -45,3 +45,5 @@ build/
 dist/
 *.egg-info/
 *.spec
+
+*.python-version
