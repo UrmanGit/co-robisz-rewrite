@@ -29,6 +29,6 @@ And that is - I hope - my last one.
 
 ## Contributing
 
-I really want people to help me. Though the license and contributing files may look a bit too corporative, it's just for safety so people don't steal my game and I get my credits. If you want to help, just submit a PR! ...And read the `CONTRIBUTING.md` file. If you have questions, contact me via wojteku229@icloud.com
+I really want people to help me.  If you want to help, just submit a PR! ...And read the `CONTRIBUTING.md` file. If you have questions, contact me via wojteku229@icloud.com
 
 *more to come soon*
