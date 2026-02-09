@@ -1,6 +1,6 @@
 import pygame as pg
 
-import game.core.config as config
+import core.config as config
 
 
 class WindowManager:
@@ -16,7 +16,7 @@ class WindowManager:
 
         :param size: Game window size
         :param _fullscreen: Defines if a game window is _fullscreen
-        :param flags: Flags used to make a pygame.Surface object
+        :param flags: Flags used to make a pySurface object
         :param base_resolution: Screen resolution used when _fullscreen = True
         """
         self.size: tuple[int, int] = size

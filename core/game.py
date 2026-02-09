@@ -4,15 +4,15 @@ pg.init()
 import sys
 
 # Game and code assets
-import game.core.config as config
-import game.core.utils as utils
-from game.core.window import WindowManager
-import game.core.assets as assets
+import core.config as config
+import core.utils as utils
+from core.window import WindowManager
+import core.assets as assets
 
 # Game stuff
-import game.map.room
-import game.map.tilemaps
-import game.entities.player as player
+import map.room
+import map.tilemaps
+import entities.player as player
 
 
 class Game:
@@ -27,7 +27,7 @@ class Game:
         assets.dict_animations()
 
         # Other delayed loadings
-        game.map.tilemaps.load_tiles()
+        map.tilemaps.load_tiles()
 
         # Pygame stuff
         self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
@@ -46,33 +46,33 @@ class Game:
         # Game stuff
         room_pos_x: int = (
             self.wm.screen.width // 2
-            - len(game.map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
+            - len(map.tilemaps.magazine_tilemap[0]) * config.TILE_SIZE // 2
         )
         room_pos_y: int = int(
             self.wm.screen.height // 1.25
-            - len(game.map.tilemaps.magazine_tilemap) * config.TILE_SIZE // 2
+            - len(map.tilemaps.magazine_tilemap) * config.TILE_SIZE // 2
         )
 
-        self.magazine = game.map.room.Room(
+        self.magazine = map.room.Room(
             offset=(room_pos_x, room_pos_y),
-            tilemap=game.map.tilemaps.magazine_tilemap,
-            tiles=game.map.tilemaps.magazine_tiles,
+            tilemap=map.tilemaps.magazine_tilemap,
+            tiles=map.tilemaps.magazine_tiles,
         )
 
         room_pos_x = (
             self.wm.screen.width // 2
-            - len(game.map.tilemaps.startroom_tilemap[0]) * config.TILE_SIZE // 2
+            - len(map.tilemaps.startroom_tilemap[0]) * config.TILE_SIZE // 2
         )
         room_pos_y = (
             room_pos_y
-            - (len(game.map.tilemaps.startroom_tilemap) - 1) * config.TILE_SIZE
+            - (len(map.tilemaps.startroom_tilemap) - 1) * config.TILE_SIZE
             - 5 * config.SCALE_FACTOR
         )
 
-        self.startroom = game.map.room.Room(
+        self.startroom = map.room.Room(
             offset=(room_pos_x, room_pos_y),
-            tilemap=game.map.tilemaps.startroom_tilemap,
-            tiles=game.map.tilemaps.startroom_tiles,
+            tilemap=map.tilemaps.startroom_tilemap,
+            tiles=map.tilemaps.startroom_tiles,
         )
 
         player_animations_dict: dict[str, list[tuple[pg.Surface, float]]] = {}

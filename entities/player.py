@@ -1,6 +1,6 @@
 from . import base
 import pygame as pg
-import game.map.room as room
+import map.room as room
 from math import sqrt
 
 

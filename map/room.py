@@ -1,9 +1,9 @@
 import pygame as pg
 
-import game.core.config as config
-import game.collisions as collisions
+import core.config as config
+import collisions as collisions
 
-from game.typing import Hitbox
+from typing import Hitbox
 
 
 class Room:

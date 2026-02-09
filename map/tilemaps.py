@@ -1,5 +1,5 @@
 import pygame as pg
-import game.core.assets as assets
+import core.assets as assets
 
 # fmt: off
 magazine_tilemap: list[list[int]] = [[-4, 1, 1, 2, 1, 4],
