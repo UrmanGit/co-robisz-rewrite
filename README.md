@@ -31,4 +31,25 @@ And that is - I hope - my last one.
 
 I really want people to help me.  If you want to help, just submit a PR! ...And read the `CONTRIBUTING.md` file. If you have questions, contact me via wojteku229@icloud.com
 
-*more to come soon*
+---
+
+# Run the game
+
+Okay, so how do you run the game?
+**If you're familiar with Python**, you can just make a virtual environment and run `pip install -r requirements.txt`, then `python ./main.py`.
+
+If you're not, here are more detailed steps:
+
+1. wwInstall Python. That one you can figure out :)
+2. Create a virtual environment (optional)
+    - Cd into this repo's root directory (.../co-robisz-rewrite/)
+    - Run `python -m venv .venv` and wait
+    - If You're on Windows:
+        - Run (in PowerShell) `./.venv/Scripts/activate`
+    - If You're on Linux:
+        - Run `source ./.venv/bin/activate`
+3. **Install the requirements**: Run `pip install -r requirements.txt`
+    > If you are on Linux, you may have to install some additional SDL packages to build `pygame-ce`. If you get an error during installation, search what package is missing and download it with your package manager (pacman, apt, etc.) and try again.
+4. **Run the game**: type `python ./main.py` and it should open a window with my beautiful game. If something doesn't work, google it or ask AI. If you think I'm missing something, email me!
+
+*More to come soon...*
