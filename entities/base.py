@@ -67,12 +67,11 @@ class Entity(Movable, Animated):
         if visible_hitbox:
             pg.draw.rect(screen, self.hitbox.color, self.hitbox.rect)
 
-    def update(self, alter_pos: tuple[int, int] | pg.Vector2 | None = None) -> None:
-        pos: tuple[int, int] | pg.Vector2 = pg.Vector2(alter_pos) if alter_pos is not None else self.pos
+    def update(self) -> None:
         hitbox_width = self.image.width - self.image.width // 4
         hitbox_height = self.image.height // 8
 
-        hitbox_x = pos.x + (self.image.width - hitbox_width) // 2
-        hitbox_y = pos.y + self.image.height - hitbox_height
+        hitbox_x = self.pos.x + (self.image.width - hitbox_width) // 2
+        hitbox_y = self.pos.y + self.image.height - hitbox_height
 
         self.hitbox.update((int(hitbox_x), int(hitbox_y)))

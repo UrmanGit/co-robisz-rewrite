@@ -58,12 +58,12 @@ class Player(base.Entity):
         if animation:
             self.animate(dt, self.current_animation)
 
-        future_pos = self.pos + new_pos
-        self.update(future_pos)
+        future_hitbox = pg.Rect(self.hitbox.pos + new_pos, self.hitbox.size)
 
-        if room_hitbox.right < self.hitbox.rect.right or self.hitbox.rect.left < room_hitbox.left: new_pos.x = 0
-        if room_hitbox.bottom < self.hitbox.rect.bottom or self.hitbox.rect.top < room_hitbox.top: new_pos.y = 0
+        if room_hitbox.right < future_hitbox.right or future_hitbox.left < room_hitbox.left: new_pos.x = 0
+        if room_hitbox.bottom < future_hitbox.bottom or future_hitbox.top < room_hitbox.top: new_pos.y = 0
 
         future_pos = self.pos + new_pos
         self.pos = future_pos
-        self.update(future_pos)
+        self.update()
+
