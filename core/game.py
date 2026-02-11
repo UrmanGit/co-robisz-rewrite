@@ -32,7 +32,7 @@ class Game:
         # Pygame stuff
         self.keys: pg.key.ScancodeWrapper = pg.key.get_pressed()
         self.just_keys: pg.key.ScancodeWrapper = pg.key.get_just_pressed()
-        self.mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_pressed(5)
+        self.mouse: tuple[bool, bool, bool, bool, bool] = pg.mouse.get_pressed(5) # type: ignore
         self.just_mouse: tuple[bool, bool, bool, bool, bool] = (
             pg.mouse.get_just_pressed()
         )
